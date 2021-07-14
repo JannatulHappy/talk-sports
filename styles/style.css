@@ -1,0 +1,78 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #f9fafa;
+    color:#ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+/* top banner -containerstyles-start */
+.top-banner-container{
+
+    background-color: darkseagreen;
+    display:flex;
+    flex-wrap: wrap;
+   
+}
+.banner-left{
+    width:50%;
+    margin-bottom: 70px;
+ 
+
+
+ 
+ 
+ /* width: 485px;
+height: 230px;
+left: 156px;
+top: 207px;
+
+font-family: Poppins;
+font-style: normal;
+font-weight: bold;
+font-size: 64px;
+line-height: 80px; */
+}
+.banner-title{
+    margin-top: 207px;
+    margin-left: 156px;
+}
+.banner-title{
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 80px;
+}
+.banner-button{
+    width: 168px;
+    height: 44px;
+    margin-left: 156px;
+    background-color:#E02C6D;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 24px;
+    transition: transform 0.6s ease-in 0.1s;
+} 
+a{
+    text-decoration: none;
+    color:white;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+.banner-right{
+    width:50%;
+    margin-top:153px;
+    margin-bottom: 70px;
+}
+
+.top-banner-container:hover > .banner-left .banner-button{
+    transform: translate(900px, -470px);
+}
+.banner-right img{
+    
+    width:75%;
+}
+/* top banner -container styles-end*/
