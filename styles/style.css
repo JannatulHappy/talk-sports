@@ -187,7 +187,9 @@ button{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
 }
-
+.footer-img img{
+    width: 100%;
+ }
 .footer-copyright p{
     color: #585656;
     font-size: 18px;
@@ -234,8 +236,7 @@ button{
     }
     .footer-container{
         width:100%;
-        
-      
+     
     }
     .players{
         display: grid;
