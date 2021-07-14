@@ -1,5 +1,6 @@
 /* font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+/* common styles */
 body{
     padding: 0;
     margin: 0;
@@ -7,8 +8,6 @@ body{
     color:#ffffff;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
-    
-    
 }
 .container{
     width:80%;
@@ -17,27 +16,19 @@ body{
     margin-top:90px;
     margin-bottom:90px;
 }
-/* top banner -containerstyles-start */
+/* top banner -container styles start */
 .top-banner-container{
 
     background-color: darkseagreen;
-    /* display:flex;
-    flex-wrap: wrap; */
-   display:grid;
-   grid-template-columns: repeat(2, 1fr);
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
 }
-.banner-left{
-    width:50%;
-    margin-bottom: 70px;
- 
-}
+
 .banner-title{
     margin-top: 207px;
     margin-left: 156px;
     width: 485px;
     height: 230px;
-}
-.banner-title{
     font-weight: bold;
     font-size: 64px;
     line-height: 80px;
@@ -62,7 +53,6 @@ a{
     line-height: 24px;
 }
 .banner-right{
-    /* width:50%; */
     margin-top:153px;
     margin-bottom: 70px;
 }
@@ -71,8 +61,7 @@ a{
     transform: translate(900px, -470px);
 }
 .banner-right img{
-    
-    width:77%;
+    width:80%;
 }
 /* top banner -container styles-end*/
 /* players styles start */
@@ -92,17 +81,14 @@ a{
     justify-content: center;
     width: 330px;
     height: 610px; 
-    box-shadow: 0px 0px 70px rgba(0, 0, 0, 0.15); 
-    border-radius: 5px;    
-
-
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15); 
+    border-radius: 5px; 
+    margin-bottom: 25px;   
 }
 .photo-detail {
     width: 300px;
     height: 290px;
     margin-bottom:30px;
-   
-    
 }
 
 .photo img{
@@ -126,6 +112,7 @@ a{
 }
 
 /* players styles end */
+/* gallery style start */
 .gallery h1{
     font-weight: bold;
     font-size: 64px;
@@ -137,13 +124,10 @@ a{
 .gallery-img{
     background-color: #ffffff;
     color:black;
-    
     display:grid;
     grid-template-columns:repeat(4, 1fr);
     box-shadow: 0px 0px 70px rgba(0, 0, 0, 0.15); 
     border-radius: 5px;    
-
-
 }
 .gallery-img img{
     width: 300px;
@@ -153,6 +137,7 @@ a{
     border-radius: 5px;
 }
  /* gallery end */
+ /* login start */
  .login-container{
     display: flex;
     justify-content: center;
@@ -191,9 +176,9 @@ button{
     padding: 7px;
     border:none;
 }
+/* login end */
 /* footer start */
 .footer-container{
-    
     width:35%;
     margin: auto;
     overflow: hidden;
@@ -201,10 +186,6 @@ button{
     margin-bottom:90px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-}
-
-.footer-container .footer-img{
-    width:100%;
 }
 
 .footer-copyright p{
@@ -232,8 +213,9 @@ button{
     height: 32px;
 }
 /* footer  end */
-
-@media  (max-width:688px) {
+/* responsive start */
+/* mobile device */
+@media only screen and (max-width:688px) {
     .container{
         width:100%;
     }
@@ -242,9 +224,9 @@ button{
         grid-template-columns: repeat(1, 1fr);
     }
     .banner-title{
-        margin-bottom: 140px;
         width: 300px;
         height: 230px;
+        margin-bottom: 140px;
     }
     .banner-title, .banner-button{
        
@@ -252,6 +234,7 @@ button{
     }
     .footer-container{
         width:100%;
+        
       
     }
     .players{
@@ -264,4 +247,4 @@ button{
     }
 
 }
-
+/* responsive end */
